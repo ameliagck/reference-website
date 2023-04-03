@@ -5,24 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Design 1 Reference Site</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header role="banner">
     <h1>Web Design I Reference Website</h1>
-    <nav>
+    <nav role="navigation">
       <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#naming-coventions">Naming Conventions</a></li>
-        <li><a href="#commit-messages">Commit messages</a></li>
-        <li><a href="#html-elements">HTML Elements</a></li>
+        <li><a href="#introduction" aria-label="to introduction">Introduction</a></li>
+        <li><a href="#naming-coventions" aria-label="to naming conventions">Naming Conventions</a></li>
+        <li><a href="#commit-messages" aria-label="to commit messages">Commit messages</a></li>
+        <li><a href="#html-elements" aria-label="to html elements">HTML Elements</a></li>
+        <li><a href="#cascading-style-sheets" aria-lable="to cascading style sheets">Cascading Style Sheets</a></li>
       </ul>
     </nav>
   </header>  
   
-  <main>
+  <main role="main">
     <section id="introduction">
       <h2>Introduction</h2>
-        <p>Hello and welcome to my reference website from web design 1! This site is a summary of all that was learned in the course. The content covers the fundamentals of HTML as well as some basics of CSS.</p>
+      <p>Hello and welcome to my reference website from web design 1! This site is a summary of all that was learned in the course. The content covers the fundamentals of HTML as well as some basics of CSS.</p>
       <h3>How to get started</h3>
       <ol>
         <li>Create a repository on GitHub website or fork</li>
@@ -46,79 +51,263 @@
     
     <section id="commit-messages">
       <h2>Commit messages</h2>
-      <p></p>
+      <p>Commit messages are a marker for what the commit will do. They should be kept brief  but at least three words long and starting with an active verb. Think of the sentance as starting with <q>"this commit will"</q> and then begin the mssage.</p>
     </section>
     
     <section id="html-elements">
       <h2>HTML Elements</h2>
-      <!--include image-->
-        <p>HTML or HyperText Markup Language is a coding language used to describe content of a website. Despite adding a difference in appearance to the content the role of HTML tags is to give content meaning and hierarchy, and should not be used to style visuals.</p>
-      <h3>Commenting</h3>
-<!--link to commenting in css and include image-->
+      <p>HTML or HyperText Markup Language is a coding language used to describe content of a website. Despite adding a difference in appearance to the content the role of HTML tags is to give content meaning and hierarchy, and should not be used to style visuals.</p>
+      <article>
+        <h3>Commenting</h3>
+<!--this is a comment-->
+        <img src="images/comment-in-html.png" alt="screenshot of comment in vscode"/>
         <p>Comments can be placed in code to to set reminders, explanations, and note things to collaborators. Comments are not displayed by the browser and can only be seen when reading or editing the code of a site.</p>
-      <h3>Headings</h3>
-      <!-- explain headings -->
-      <h1>This is an h1 heading</h1>
-      <h2>This is an h2 heading</h2>
-      <h3>This is an h3 heading</h3>
-      <h4>This is an h4 heading</h4>
-      <h5>This is an h5 heading</h5>
-      <h6>This is an h6 heading</h6>
-      <p>Headings span from 1 to 6. h1 holding the most important information, and h6 holding the least.</p>
-      
-      <h3>Paragraphs</h3>
-      <p>This tag defines a paragraph of text. Paragraphs are block-level elements and will be displayed in one long line by default.</p>
-      <h3>Lists</h3>
-      <ul>
-        <li>This is an unordered list</li>
-        <li>It is used for content that is not dependant on the other list items for context</li>
-        <li>Think bullet points</li>
-      </ul>
-      <ol>
-        <li>This is an ordered list</li>
-        <li>It is used for content that is dependant on an order</li>
-        <li>Think step by step</li>
-      </ol>
-      <dl>
-        <dt>This is a description list</dt>
-        <dd>It is used connect context or explination to a main point</dd>
-        <dd>Think glossary or definition</dd>
-      </dl>
+      </article>
+      <article>
+        <h3>Headings</h3>
+        <h1>This is an h1 heading</h1>
+        <h2>This is an h2 heading</h2>
+        <h3>This is an h3 heading</h3>
+        <h4>This is an h4 heading</h4>
+        <h5>This is an h5 heading</h5>
+        <h6>This is an h6 heading</h6>
+        <p>Headings span from 1 to 6, h1 holding the most important information, and h6 holding the least.</p>
+      </article>
 
-      <h3>Quotes and Citations</h3>
+      <article>
+        <h3>Paragraphs</h3>
+        <p>A <b>p</b> tag defines a paragraph of text. Paragraphs are block-level elements and will be displayed in one long line by default as well as standard margins.</p>
+      </article>
 
-      <h3>Phrasing Elements</h3>
-      <h3>Links</h3>
-      <h4>Link Text</h4>
-      <h4>Images</h4>
-      <h4>Link to Absolute url or path</h4>
-      <h4>Link to Relative url or path</h4>
-      <h4>Link to Element on the Same Page</h4>
-      <h4>Skip Links</h4>
-      <!-- link to links sectios -->
-      <h3>Structing Content</h3>
-      <h4>Header</h4>
-      <h4>Footer</h4>
-      <h4>Main</h4>
-      <h4>Section</h4>
-      <h4>Article</h4>
-      <h4>Nav</h4>
-      <h4>Aside</h4>
+      <article>
+        <h3>Lists</h3>
+        <ul>
+          <li>This is an unordered list</li>
+          <li>It is used for content that is not dependant on the other list items for context</li>
+          <li>Think bullet points</li>
+        </ul>
+        <ol>
+          <li>This is an ordered list</li>
+          <li>It is used for content that is dependant on an order</li>
+          <li>Think step by step</li>
+        </ol>
+        <dl>
+          <dt>This is a description list</dt>
+          <dd>It is used connect context or explination to a main point</dd>
+          <dd>Think glossary or definition</dd>
+        </dl>
+      </article>
+
+      <article>
+        <h3>Quotes and Citations</h3>
+        <ul>
+          <li>The quote tag is used to mark up quotes embedded in other elements like a paragraph.</li>
+          <li>The blockquote tag is used for large stand alone quotes.</li>
+          <li>The cite tag is used for marking the source of the quote. <cite>Brightspace Web Design 1 Week 4 slides</cite></li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Phrasing Elements</h3>
+        <ul>
+          <li>The emphasis tag is used to do just that <em>emphasize</em>.</li>
+          <li>Lots of emphasis, strong importance or urgency, then we use a <strong>strong</strong> tag.</li>
+          <li>The small tag is used to <small>shrink</small> the importance of content. Is often used in footers and for copywrites.</li>
+          <li>Like in typography <i>italics</i> are used for another language, a technical term, or a title. This is visual only italics.</li>
+          <li>The b tag is used to define a <b>keyword</b></li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Links</h3>
+        <dl>
+          <dt>Link Text</dt>
+          <dd>To link text The opening <b>a</b> tells where the link should start and the closing <b>/a</b> indicates where the link ends. To create a hyperlink, you should use the <b>a</b> tag and href attribute, the value of which is the URL, or location, where the link is pointing to.</dd>
+          <dt>Link to Element on the Same Page</dt>
+          <dd>To link to an element on the same page an <b>id</b> must be used in the place of the href in the link and written starting with a hashtag.</dd>
+          <dt>Link to Absolute url or path</dt>
+          <dd>A relative file path points to a file relative to the current page.</dd>
+          <dt>Link to Relative url or path</dt>
+          <dd>Absolute URLs offer a full address for a website or other resource on the internet.</dd>
+          <dt>Images</dt>
+          <dd>Images in websites are not embedded in the website, but linked to by the HTML document. Images need two attributes to specify extra details about the image the location of the image and the alternative content.</dd>
+        </dl>
+      </article>
+
+      <article>
+        <h3>Targeting HTML Elements</h3>
+        <!--include images and links-->
+        <h4>Generic Elements</h4>
+        <p>There may be times when you just need a generic element to target content; most often to later manipulate styling with CSS or behavior with JS.</p>
+        <ul>
+          <li>Block element used to group elements together.</li>
+          <li>An inline container used to mark up a part of a text, or part of a document.</li>
+          <li>The <b>figure</b> element represents self-contained content. The <b>figcaption</b> element represents a caption or legend describing the rest of the contents of its parent element: <b>figure</b>.</li>
+        </ul>
+
+        <h4>Common Global Attributes</h4>
+        <p>Common global attributes allow us to target any HTML element within our CSS or JavaScript.</p>
+        <ul>
+          <li>You can use a <b>class</b> multiple times throughout your HTML and attach it to different types of elements.</li>
+          <li>Only allowed to use one unique <b>id</b> once in each HTML page.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Structing Content</h3>
+        <dl>
+          <dt>Header</dt>
+          <dd>The header is the introductory content usually at the top of the page and would include a logo or company name and main navigation. Headers are also within sections and articles to introduce the content for headings, subheadings, author, etc..</dd>
+          <dt>Nav</dt>
+          <dd>The nav element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.</dd>
+          <dt>Main</dt>
+          <dd>The main element wraps around the main content of the page. It’s only used once per page and it tells the browser that this is where the main content is.</dd>
+          <dt>Section</dt>
+          <dd>Section is used to wrap around related pieces of content. Usually each section has its own heading.</dd>
+          <dt>Article</dt>
+          <dd>The article element represents a self-contained composition in a web page, which is intended to be independently distributable or reusable. Examples include blog post, product card, interactive widget, etc...</dd>
+          <dt>Footer</dt>
+          <dd>Many webpages end their pages with a footer at the bottom. This often includes lists of links, copyright information, extra information about the company,terms and services.</dd>
+          <dt>Aside</dt>
+          <dd>The aside element represents a portion of a document whose content is only indirectly related to the document's main content. This content will frequently be presented as a sidebar on a website.</dd>
+        </dl>
+      </article>
+    </section>
+
+    <section>
       <h3>Accessibility</h3>
+      <p>Web content must be:</p>
+        <ul>
+          <li>Perceivable</li>
+          <li>Operable</li>
+          <li>Understandable</li>
+          <li>Robust</li>
+        </ul>
+
+      <article>
+        <h4>Landmark roles</h4>
+        <p>ARIA has a set of landmark roles to help those using screen readers to jump directly to specific sections within our sites.</p>
+        <dl>
+          <dt>Banner</dt>
+          <dd>This role is for defining an element as the masthead, added to the primary <b>header</b>.</dd>
+          <dt>Navigation</dt>
+          <dd>This role is for defining an element as the primary navigation, added the the top <b>nav</b>.</dd>
+          <dt>Main</dt>
+          <dd>This role is for defining an element as being the main content of the page, added to the <b>main</b>.</dd>
+          <dt>Complimentary</dt>
+          <dd>This role is for defining an element as being content related to the primary content, usually added to an <b>aside</b>.</dd>
+          <dt>Contentinfo</dt>
+          <dd>This role is for defining an element as information about the content: e.g. copyright, terms, privacy policy, usually added to a <b>footer</b>.</dd>
+        </dl>
+      </article>
+
+      <article>
+        <h4>Aria Label</h4>
+        <p>Adding aria-label attribute provides the user with a non-visual label that will only be announced by screen readers.</p>
+        <h5>Image Descriptions</h5>
+        <p>Always describe your images with the alt attribute. If purely decorative you can leave it empty and apply role=“presentation”</p>
+        <p>The alt attribute has two purposes:</p>
+        <ul>
+          <li>To describe the photo if it doesn’t download</li>
+          <li>To describe the photo to someone who cannot see the image, maybe someone using a screen reader</li>
+        </ul>
+      </article>
+
+      <article>
+        <h4>Skip Links</h4>
+        <p>Skip links are placed at the top of your page and offer users a way to jump to specific areas of the page.</p>
+      </article>
     </section>
     
-    <section>
+    <section id="cascading-style-sheets">
       <h2>Cascading Style Sheets</h2>
-      <!-- link to links sectios and commenting-->
       <h3>Commenting</h3>
+      <img src="images/comment-in-css.png" alt="screenshot of a css comment as seen in vs code"/>
+      <p>Like comments in HTML, CSS comments are not seen in the browser and can only be found in the code. They are used to make notes add context and directions.</p>
       <h3>Fonts and Text</h3>
-      <h4>Font Properties</h4>
-      <h4>Text Decorations</h4>
-      <h4>States of Links</h4>
-      <h4>Google Fonts</h4>
-      <h3>Display</h3>
-      <h4>Margin and Padding</h4>
+      <article>
+        <h4>Font Properties</h4>
+        <dl>
+          <dt>font-family</dt>
+          <dd>For setting the type of font used. Generic is included so that it can be universal to all systems regardless of available fonts.</dd>
+          <dd>Ex: "comic sans", sans-serif; georgia, serif; ext...</dd>
+          <dt>font-size</dt>
+          <dd>For adjusting the size of the font: a single number with a unit (rem [the best choice], em, px)</dd>
+          <dd>Ex: 2rem, 1.125em, 24px </dd>
+          <dt>font-weight</dt>
+          <dd>Sets how thick or thin characters in text should be displayed</dd>
+          <dd>Ex: bold, normal, 700</dd>
+          <dt>font-style</dt>
+          <dd>Specifies font style for text</dd>
+          <dd>Ex: italic or normal</dd>
+          <dt>line-height</dt>
+          <dd>For adjusting the line-height: a single number, a multiplier that multiplies the font-size</dd>
+          <dd>Ex: 1.5</dd>
+        </dl>
+      </article>
+
+      <article>
+        <h4>Text Decorations</h4>
+        <dl>
+          <dt>text-transform</dt>
+          <dd>Change capitalization such as uppercase, lowercase, capitalize. It’s a good idea to use CSS to make all caps instead of writing it directly in HTML for accessibility reasons.</dd>
+          <dd>Ex: uppercase, lowercase, capitalize</dd>
+          <dt>text-decoration</dt>
+          <dd>Specifies the decoration added to text. The only things in a website that should be underlined are links.</dd>
+          <dd>Ex: none, underline, line-through, overline</dd>
+          <dt>text-align</dt>
+          <dd>Specifies the horizontal alignment of text in an element</dd>
+          <dd>Ex: left, center (American spelling), right, justify</dd>
+          <dt>text-indent</dt>
+          <dd>Indent the first line of text like traditionally printed materials</dd>
+          <dd>Ex: 1rem, 2em, 20px, 25%</dd>
+          <dt>text-shadow</dt>
+          <dd>Adding a shadow to the text. Specified like this: text-shadow: horizontal-offset vertical-offset blur-radius colour</dd>
+          <dd>text-shadow: 2px 2px #ff0000;</dd>
+        </dl>
+      </article>
+
+      <article>
+        <h4>States of Links</h4>
+        <p>Links can change styles depending on the state of use.</p>
+        <dl>
+          <dt>link:</dt>
+          <dd>For styling the default link state.</dd>
+          <dt>visited:</dt>
+          <dd>For styling the link after it’s been visited by the user.</dd>
+          <dt>hover:</dt>
+          <dd>For styling the link when the mouse is sitting over it.</dd>
+          <dt>focus:</dt>
+          <dd>For styling the link when the keyboard has tab-focused it.</dd>
+          <dt>active:</dt>
+          <dd>For styling the link when the mouse button is pressed down on it.</dd>
+        </dl>
+      </article>
+
+      <article>
+        <h4>Google Fonts</h4>
+        <p>How to link a Google Font:</p>
+        <ol>
+          <li>Go to Google Fonts website and find a font</li>
+          <li>Click on the plus icon to add the font to your selection</li>
+          <li>Copy the provided HTML link</li>
+          <li>Paste link in head of HTML</li>
+          <li>Reference font name when applying font-family, remember to provide a back up</li>
+        </ol>
+      </article>
+
+      <article>
+        <h3>The Box</h3>
+          <h4>Margin</h4>
+          <p>Outside the box is the margin, a transparent layer pushing other boxes away. Margin is the space around an element that separates it from other elements.</p>
+          <p>The margin is an invisible space around your box. It adds spacing outside of the box, pushing other boxes away from the box. Margins can have positive or negative values.</p>
+          <h4>Padding</h4>
+          <p>Padding adds spacing inside the box, pushing the content away from the border. The background color is visible with the padding.</p>
+      </article>
     </section>
   </main>
+  <footer role="contentinfo">
+    <p><small>The content of this website is brought to you by <cite>Brightspace Web Design 1 Slides and Notes</cite></small></p>
+  </footer>
 </body>
 </html>

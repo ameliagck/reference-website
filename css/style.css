@@ -1,0 +1,62 @@
+/*this is a comment*/
+
+body {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  background-color: #262436 ;
+  margin: -10px 20px 20px 1.5em;
+}
+
+h1 {
+  color: #ffad2d;
+  border-radius: 25px;
+  background-color: #3d3a57;
+  width: fit-content;
+  padding: 1rem;
+}
+
+h2 {
+  color: #b66fd9;
+  border-radius: 25px;
+  background-color: #3d3a57;
+  width: fit-content;
+  padding: 1rem;
+}
+
+h3 {
+  color: #63ebe7;
+  border-radius: 25px;
+  background-color: #3d3a57;
+  width: fit-content;
+  padding: 1rem;
+}
+
+h4 {
+  color: #d1d150;
+}
+
+a:link {
+  color: rgb(108, 243, 229);
+}
+
+a:visited {
+  color: rgb(12, 121, 138);
+}
+
+a:focus,
+a:hover,
+a:active {
+  color: #ffad2d;
+}
+
+dl {
+  padding-left: 1rem;
+}
+
+footer {
+  color: #ffad2d;
+  text-align: center;
+  border-radius: 25px;
+  padding: 0.5rem;
+  background-color:#3d3a57;
+}
